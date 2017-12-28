@@ -19,6 +19,7 @@
 		029A81011FF59F8000C88C2B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A81001FF59F8000C88C2B /* InterfaceController.swift */; };
 		029A81031FF59F8000C88C2B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A81021FF59F8000C88C2B /* ExtensionDelegate.swift */; };
 		029A81051FF59F8000C88C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029A81041FF59F8000C88C2B /* Assets.xcassets */; };
+		029A81151FF5B31500C88C2B /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A81141FF5B31500C88C2B /* Array+Shuffling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		029A81021FF59F8000C88C2B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		029A81041FF59F8000C88C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		029A81061FF59F8000C88C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		029A81141FF5B31500C88C2B /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				029A81001FF59F8000C88C2B /* InterfaceController.swift */,
 				029A81021FF59F8000C88C2B /* ExtensionDelegate.swift */,
+				029A81141FF5B31500C88C2B /* Array+Shuffling.swift */,
 				029A81041FF59F8000C88C2B /* Assets.xcassets */,
 				029A81061FF59F8000C88C2B /* Info.plist */,
 			);
@@ -300,6 +303,7 @@
 			files = (
 				029A81031FF59F8000C88C2B /* ExtensionDelegate.swift in Sources */,
 				029A81011FF59F8000C88C2B /* InterfaceController.swift in Sources */,
+				029A81151FF5B31500C88C2B /* Array+Shuffling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF4U8W5J97;
 				INFOPLIST_FILE = HwWProject8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkylerSvendsen.HwWProject8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF4U8W5J97;
 				INFOPLIST_FILE = HwWProject8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SkylerSvendsen.HwWProject8;
 				PRODUCT_NAME = "$(TARGET_NAME)";

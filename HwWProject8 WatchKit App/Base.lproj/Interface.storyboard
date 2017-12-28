@@ -1,14 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HwWProject8_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Safe Crack" id="GBu-Bc-lBx">
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                        </label>
+                        <slider width="1" alignment="left" continuous="YES" value="50" maximum="100" steps="100" id="do6-bi-Iae"/>
+                        <button width="1" alignment="left" title="Next" id="5D1-qK-alB">
+                            <connections>
+                                <action selector="nextTapped" destination="AgC-eL-Hgc" id="lhH-hu-5tO"/>
+                            </connections>
+                        </button>
+                        <timer alignment="center" id="aM5-O6-vPY">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                    </items>
+                    <connections>
+                        <outlet property="nextButton" destination="5D1-qK-alB" id="tWM-1v-KjV"/>
+                        <outlet property="numbersLabel" destination="GBu-Bc-lBx" id="EPI-6y-tDe"/>
+                        <outlet property="safeValue" destination="do6-bi-Iae" id="T0P-Hh-TF5"/>
+                        <outlet property="timer" destination="aM5-O6-vPY" id="ARg-Nh-hPy"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
